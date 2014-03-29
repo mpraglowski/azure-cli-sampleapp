@@ -1,0 +1,10 @@
+﻿@using System.Configuration
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Microsoft Azure</h1>
+    <p class="lead">Sample app settings: @ConfigurationManager.AppSettings["sampleSettings"]</p>
+    <p class="lead">Connection string: @ConfigurationManager.ConnectionStrings["default"].ConnectionString</p>
+</div>
